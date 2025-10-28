@@ -1,9 +1,50 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+}
+
+.work {
+  background: #ddd;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.contact {
+  padding: 20px;
+  background: #f0f0f0;
+}
+
+.contact h2 {
+  margin-bottom: 15px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.contact button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
-  .hero { flex-direction: column; }
-  .gallery { grid-template-columns: 1fr; }
+ .hero { flex-direction: column; }
+ .gallery { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 320px) {
   header nav ul { flex-direction: column; gap: 10px; }
 }
-
